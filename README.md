@@ -1,5 +1,5 @@
 # DNS-Proxy-Server
-Simple dns-proxy server
+Simple DNS Proxy server
 
 ### Introduction
 This is a simple DNS Proxy server that accepts DNS requests and sends response to the client. DNS Proxy server has a config file that contains adress of a DNS server and a black list of site domain names. If client tries to access site from the black list, DNS Proxy server will send a response with an error, if site`s domain is not in the blacklist then DNS Proxy server will send a query to the DNS Server and will send DNS response back to client
