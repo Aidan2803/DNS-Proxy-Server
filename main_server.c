@@ -223,6 +223,7 @@ bool isQueryNameBlocked(char *buffer, int buffer_size,
     }
   }
 
+  free(qname);
   return false;
 }
 
@@ -320,5 +321,8 @@ int main(void) {
                                      recsize);
     }
   }
+
+  free(config_file_ptr);
+  free(config_file_name);
   close(sock);
 }
